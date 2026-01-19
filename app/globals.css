@@ -1,0 +1,110 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #05070f;
+  color: #f5f7ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+section {
+  background: rgba(12, 16, 32, 0.85);
+  border: 1px solid rgba(72, 111, 255, 0.35);
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 8px 30px rgba(13, 22, 58, 0.45);
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  background: rgba(69, 120, 255, 0.18);
+  border: 1px solid rgba(112, 141, 255, 0.4);
+}
+
+.card {
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(86, 117, 255, 0.25);
+  background: rgba(18, 24, 44, 0.9);
+  display: grid;
+  gap: 0.6rem;
+}
+
+code {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  background: rgba(16, 24, 46, 0.9);
+  border-radius: 6px;
+  padding: 0.2rem 0.45rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid rgba(60, 83, 192, 0.35);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.table tbody tr:hover {
+  background: rgba(32, 44, 92, 0.35);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(214, 220, 255, 0.6);
+}
